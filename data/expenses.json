@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Meyer",
+    "ammount": 472.97,
+    "percentage": 89
+  },
+  {
+    "id": 2,
+    "name": "Melonie",
+    "ammount": 72.96,
+    "percentage": 16
+  },
+  {
+    "id": 3,
+    "name": "Alleen",
+    "ammount": 183.91,
+    "percentage": 52
+  },
+  {
+    "id": 4,
+    "name": "Trevor",
+    "ammount": 943.87,
+    "percentage": 67
+  },
+  {
+    "id": 5,
+    "name": "Laina",
+    "ammount": 550.14,
+    "percentage": 14
+  },
+  {
+    "id": 6,
+    "name": "Lenora",
+    "ammount": 891.31,
+    "percentage": 42
+  },
+  {
+    "id": 7,
+    "name": "Bernard",
+    "ammount": 535.53,
+    "percentage": 67
+  },
+  {
+    "id": 8,
+    "name": "Chico",
+    "ammount": 51.36,
+    "percentage": 20
+  },
+  {
+    "id": 9,
+    "name": "Sean",
+    "ammount": 817.55,
+    "percentage": 54
+  },
+  {
+    "id": 10,
+    "name": "Zolly",
+    "ammount": 529.38,
+    "percentage": 59
+  }
+]

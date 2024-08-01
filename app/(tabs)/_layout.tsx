@@ -1,34 +1,85 @@
-import { Tabs } from 'expo-router';
-import React from 'react';
+import { View, Text } from "react-native";
+import React from "react";
+import { Tabs } from "expo-router";
+import { Colors } from "@/constants/Colors";
+import AntDesign from "@expo/vector-icons/AntDesign";
 
-import { TabBarIcon } from '@/components/navigation/TabBarIcon';
-import { Colors } from '@/constants/Colors';
-import { useColorScheme } from '@/hooks/useColorScheme';
-
-export default function TabLayout() {
-  const colorScheme = useColorScheme();
-
+export default function Layout() {
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
-        headerShown: false,
-      }}>
+        tabBarStyle: {
+          backgroundColor: Colors.GRAY,
+          position: "absolute",
+          bottom: 45,
+          // justifyContent: "center",
+          // alignSelf: "center",
+          height: 63,
+          marginHorizontal: 90,
+          paddingHorizontal: 10,
+          paddingVertical: 8,
+          borderRadius: 40,
+          paddingBottom: 10,
+          // borderWidth: 1,
+          borderTopWidth: 1,
+          borderColor: "#333",
+          // borderTopColor: "#333",
+        },
+        tabBarShowLabel: false,
+        tabBarInactiveTintColor: "#999",
+        tabBarActiveTintColor: Colors.WHITE,
+      }}
+    >
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Home',
-          tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'home' : 'home-outline'} color={color} />
+          tabBarIcon: ({ focused, color, size }) => (
+            <View
+              style={{
+                padding: 12,
+                borderRadius: 30,
+                paddingHorizontal: 19,
+                backgroundColor: focused ? Colors.TINTCOLOR : Colors.GRAY,
+              }}
+            >
+              <AntDesign name="linechart" size={24} color={color} />
+            </View>
           ),
         }}
       />
+
       <Tabs.Screen
-        name="explore"
+        name="profile"
         options={{
-          title: 'Explore',
-          tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'code-slash' : 'code-slash-outline'} color={color} />
+          tabBarIcon: ({ focused, color, size }) => (
+            <View
+              style={{
+                padding: 12,
+                borderRadius: 30,
+                paddingHorizontal: 19,
+                backgroundColor: focused ? Colors.TINTCOLOR : Colors.GRAY,
+              }}
+            >
+              <AntDesign name="user" size={24} color={color} />
+            </View>
+          ),
+        }}
+      />
+
+      <Tabs.Screen
+        name="transaction"
+        options={{
+          tabBarIcon: ({ focused, color, size }) => (
+            <View
+              style={{
+                padding: 12,
+                borderRadius: 30,
+                paddingHorizontal: 19,
+                backgroundColor: focused ? Colors.TINTCOLOR : Colors.GRAY,
+              }}
+            >
+              <AntDesign name="swap" size={24} color={color} />
+            </View>
           ),
         }}
       />
