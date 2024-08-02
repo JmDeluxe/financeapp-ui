@@ -4,6 +4,8 @@ import { Colors } from "@/constants/Colors";
 import { Stack, useNavigation } from "expo-router";
 import Header from "@/components/header";
 import { PieChart } from "react-native-gifted-charts";
+import ExpenseBlock from "@/components/ExpenseBlock";
+import Expense from "@/data/expenses.json";
 
 export default function Page() {
   const pieData = [
@@ -77,6 +79,8 @@ export default function Page() {
               />
             </View>
           </View>
+
+          <ExpenseBlock expenseList={Expense} />
         </ScrollView>
       </View>
     </>
