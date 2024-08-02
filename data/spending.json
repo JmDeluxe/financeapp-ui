@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Craggie",
+    "amount": 444.69,
+    "date": "2024-05-04"
+  },
+  {
+    "id": 2,
+    "name": "Clotilda",
+    "amount": 571.91,
+    "date": "2023-11-15"
+  },
+  {
+    "id": 3,
+    "name": "Consuelo",
+    "amount": 131.73,
+    "date": "2024-01-08"
+  },
+  {
+    "id": 4,
+    "name": "Arte",
+    "amount": 277.9,
+    "date": "2023-11-25"
+  },
+  {
+    "id": 5,
+    "name": "Gale",
+    "amount": 312.58,
+    "date": "2024-03-30"
+  },
+  {
+    "id": 6,
+    "name": "Aeriell",
+    "amount": 263.79,
+    "date": "2024-04-24"
+  },
+  {
+    "id": 7,
+    "name": "Rowan",
+    "amount": 151.1,
+    "date": "2024-01-17"
+  },
+  {
+    "id": 8,
+    "name": "Norby",
+    "amount": 592.71,
+    "date": "2023-10-12"
+  },
+  {
+    "id": 9,
+    "name": "Shea",
+    "amount": 607.07,
+    "date": "2024-05-07"
+  },
+  {
+    "id": 10,
+    "name": "Timmie",
+    "amount": 325.82,
+    "date": "2023-08-16"
+  }
+]
